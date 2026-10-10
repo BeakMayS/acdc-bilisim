@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AC/DC Bilişim — Elektrik ve Güvenlik Sistemleri</title>
+<meta name="description" content="AC/DC Bilişim, Kırklareli. Elektrik tesisatı, güvenlik kamerası ve ağ altyapısı çözümleri.">
+<style>
+:root{--bg:#050505;--surface:#111;--text:#f5f5f7;--secondary:#a1a1a6;--line:#303033;--red:#ed292f;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+header{height:72px;position:sticky;top:0;z-index:20;background:rgba(5,5,5,.86);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid #ffffff12}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.logo{display:block;width:105px;height:auto}.navlinks{display:flex;align-items:center;gap:30px;font-size:12px;color:#d5d5d7}.navlinks a{transition:color .2s}.navlinks a:hover{color:#fff}.navlinks .nav-cta{padding:9px 14px;border:1px solid #68686b;border-radius:20px}.navlinks .nav-cta:hover{border-color:#fff}.hamb{display:none;background:none;color:white;border:0;font-size:24px}
+.hero{padding:86px 0 42px;text-align:center}.eyebrow{font-size:11px;color:#a1a1a6;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(44px,7.2vw,82px);line-height:1.02;letter-spacing:-.065em;font-weight:650;margin:21px auto 20px;max-width:900px}.hero h1 span{color:#8f8f94}.hero p{font-size:18px;line-height:1.55;color:var(--secondary);max-width:630px;margin:0 auto}.hero-actions{display:flex;justify-content:center;gap:22px;margin:27px 0 44px;font-size:14px}.textlink{color:#2997ff}.textlink:hover{text-decoration:underline}.hero-visual{width:100%;height:min(55vw,510px);min-height:310px;position:relative;overflow:hidden;background:#101214}.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block;filter:brightness(.75) saturate(.72)}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#050505 0%,transparent 28%,#05050508 80%,#05050555 100%)}.visual-caption{position:absolute;bottom:25px;left:0;right:0;z-index:1;text-align:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#e0e0e2}
+.service-intro{padding:95px 0 35px;text-align:center}.section-kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a1a1a6}.service-intro h2,.approach h2,.contact h2{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.055em;font-weight:600;margin:17px auto 18px;max-width:720px}.service-intro p{max-width:620px;margin:0 auto;color:var(--secondary);font-size:16px;line-height:1.7}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:30px 0 100px}.service{background:#111113;border:1px solid #202023;border-radius:16px;padding:28px 25px 25px;min-height:215px;transition:background .2s,border-color .2s}.service:hover{background:#171719;border-color:#3b3b40}.service-icon{width:34px;height:34px;display:grid;place-items:center;border:1px solid #4b4b50;border-radius:10px;color:#eee;font-size:17px;margin-bottom:26px}.service h3{font-size:19px;font-weight:600;letter-spacing:-.03em;margin:0 0 10px}.service p{font-size:13px;line-height:1.7;color:var(--secondary);margin:0}
+.feature{background:#111113;border-radius:20px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;min-height:410px}.feature-copy{padding:55px 48px;display:flex;flex-direction:column;justify-content:center}.feature-copy h2{font-size:clamp(32px,4vw,49px);line-height:1.04;letter-spacing:-.055em;font-weight:600;margin:16px 0}.feature-copy p{font-size:14px;line-height:1.8;color:var(--secondary);max-width:410px}.feature-image{min-height:360px}.feature-image img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(.8) saturate(.75)}
+.approach{padding:110px 0}.approach-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.approach h2{margin:16px 0}.approach-intro{color:var(--secondary);font-size:14px;line-height:1.8}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:45px 1fr;gap:15px;padding:22px 0;border-bottom:1px solid var(--line)}.step-no{font-size:11px;color:#888;font-variant-numeric:tabular-nums;padding-top:3px}.step h3{font-size:16px;font-weight:600;margin:0 0 7px}.step p{font-size:13px;line-height:1.7;color:var(--secondary);margin:0}
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:25px}.gallery-head h2{font-size:clamp(32px,4.5vw,52px);letter-spacing:-.055em;font-weight:600;margin:12px 0 0}.gallery-head p{max-width:360px;color:var(--secondary);font-size:13px;line-height:1.7;margin:0}.gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:12px}.gallery-main,.gallery-side article{position:relative;overflow:hidden;border-radius:14px;background:#151515}.gallery-main{min-height:450px}.gallery-side{display:grid;gap:12px}.gallery-side article{min-height:219px}.gallery img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.75) saturate(.72);transition:transform .5s,filter .5s}.gallery article:hover img,.gallery-main:hover img{transform:scale(1.035);filter:brightness(.9) saturate(.85)}.gallery article:after,.gallery-main:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#050505cc,transparent 65%)}.gallery-label{position:absolute;z-index:1;bottom:22px;left:23px;font-size:18px;font-weight:600;letter-spacing:-.03em}.gallery-label small{display:block;font-size:10px;color:#d2d2d5;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;font-weight:500}
+.contact{padding:100px 0 110px;text-align:center}.contact h2{max-width:760px}.contact p{font-size:16px;line-height:1.7;color:var(--secondary);max-width:570px;margin:0 auto}.contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:27px}.pill{padding:12px 17px;border-radius:22px;border:1px solid #5c5c60;font-size:13px}.pill.primary{background:#f5f5f7;color:#111;border-color:#f5f5f7}.pill:hover{border-color:#fff}
+footer{border-top:1px solid var(--line);padding:28px 0 25px;color:#8a8a90;font-size:11px}.footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-logo{width:75px;opacity:.9}.footer-links{display:flex;gap:22px;flex-wrap:wrap}.footer-links a:hover{color:#fff}.legal{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #252528;margin-top:24px;padding-top:17px}
+@media(max-width:780px){.navlinks{display:none;position:absolute;top:71px;left:0;right:0;padding:22px 24px;background:#080808;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.hamb{display:block}.hero{padding-top:68px;padding-bottom:34px}.hero-visual{height:400px}.services{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}.feature-image{min-height:300px;grid-row:1}.feature-copy{padding:38px 30px}.approach-grid{grid-template-columns:1fr;gap:32px}.gallery-head{align-items:start;flex-direction:column}.gallery{grid-template-columns:1fr}.gallery-main{min-height:340px}.gallery-side{grid-template-columns:1fr 1fr}.gallery-side article{min-height:210px}}
+@media(max-width:540px){.wrap{width:calc(100% - 32px)}.logo{width:92px}.hero{padding-top:57px;padding-bottom:28px}.hero h1{letter-spacing:-.055em}.hero p{font-size:16px}.hero-actions{gap:18px;margin-bottom:32px}.hero-visual{height:340px;min-height:0}.service-intro{padding-top:72px}.services{grid-template-columns:1fr;padding-bottom:70px}.service{min-height:0}.feature-copy{padding:32px 24px}.feature-image{min-height:245px}.approach{padding:75px 0}.gallery-main{min-height:270px}.gallery-side{grid-template-columns:1fr}.gallery-side article{min-height:230px}.contact{padding:75px 0}.footer-top,.legal{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}}
+
+.admin-open{background:transparent;border:1px solid #48484c;border-radius:20px;color:#e7e7e9;padding:9px 13px;font:inherit;font-size:12px;cursor:pointer}
+.admin-open:hover{border-color:#fff}
+.work-section{padding:80px 0 95px;border-top:1px solid #202023}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.work-card{background:#111113;border:1px solid #252528;border-radius:14px;overflow:hidden}
+.work-card img{width:100%;height:220px;object-fit:cover;display:block;background:#1a1a1a}
+.work-copy{padding:20px}.work-copy small{color:#a0a0a5;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.work-copy h3{font-size:18px;letter-spacing:-.03em;margin:9px 0}.work-copy p{font-size:13px;line-height:1.7;color:#a1a1a6;margin:0}
+.work-empty{grid-column:1/-1;border:1px dashed #424247;border-radius:14px;padding:28px;text-align:center;color:#9c9ca2;font-size:13px}
+.admin-modal{position:fixed;inset:0;z-index:1000;background:#000c;backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:18px}
+.admin-modal.open{display:flex}
+.admin-window{width:min(980px,100%);max-height:92vh;overflow:auto;background:#0d0d0f;border:1px solid #38383d;border-radius:18px;box-shadow:0 30px 100px #000b}
+.admin-top{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid #2b2b30;position:sticky;top:0;background:#0d0d0f;z-index:2}
+.admin-top h2{margin:0;font-size:18px;letter-spacing:-.4px}.admin-top span{color:#929298;font-size:11px;display:block;margin-top:5px}
+.admin-close{background:#222226;color:#fff;border:1px solid #45454a;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer}
+.admin-body{padding:24px}.admin-login{max-width:390px;margin:28px auto 36px}.admin-login h3{font-size:25px;margin:0 0 8px}.admin-login p{color:#a1a1a6;font-size:13px;line-height:1.7}
+.admin-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.admin-tabs button{background:#18181b;border:1px solid #36363b;border-radius:8px;color:#cfcfd3;padding:10px 13px;font-size:12px;cursor:pointer}.admin-tabs button.active{background:#f5f5f7;color:#111;border-color:#f5f5f7}
+.admin-pane{display:none}.admin-pane.active{display:block}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.admin-field{display:flex;flex-direction:column;gap:7px}.admin-field.full{grid-column:1/-1}.admin-field label{font-size:11px;color:#b4b4ba}.admin-field input,.admin-field textarea{width:100%;background:#151518;border:1px solid #39393f;color:#f4f4f6;border-radius:8px;padding:12px;font:inherit;font-size:13px;outline:none}.admin-field textarea{min-height:100px;resize:vertical}.admin-field input:focus,.admin-field textarea:focus{border-color:#929298}
+.admin-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.admin-btn{background:#f3f3f5;color:#111;border:1px solid #f3f3f5;border-radius:8px;padding:11px 15px;font-size:12px;font-weight:700;cursor:pointer}.admin-btn.secondary{background:#18181b;color:#eee;border-color:#3b3b40}.admin-btn.danger{background:#321719;color:#ffb6b9;border-color:#623034}
+.admin-note{padding:12px 14px;background:#191713;border:1px solid #49402b;border-radius:8px;color:#d7c69e;font-size:11px;line-height:1.7;margin-bottom:20px}
+.work-editor{border:1px solid #35353a;border-radius:12px;padding:15px;margin-top:14px}.work-editor h4{margin:0 0 12px;font-size:14px}.work-editor .admin-grid{gap:10px}.work-editor img{width:95px;height:72px;object-fit:cover;border-radius:7px;margin-top:8px}
+.admin-status{font-size:12px;color:#a8c97a;margin-top:10px;min-height:17px}
+@media(max-width:780px){.work-grid{grid-template-columns:1fr 1fr}.admin-grid{grid-template-columns:1fr}.admin-field.full{grid-column:auto}.admin-body{padding:16px}.admin-top{padding:16px}}
+@media(max-width:540px){.work-grid{grid-template-columns:1fr}.admin-open{align-self:flex-start}.admin-modal{padding:7px}.admin-window{max-height:96vh;border-radius:12px}}
+
+/* Premium interaction refinements */
+html{scroll-padding-top:88px}
+section[id],main[id]{scroll-margin-top:88px}
+.navlinks a{position:relative}
+.navlinks a:not(.nav-cta)::after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:#f5f5f7;transition:right .22s ease}
+.navlinks a:not(.nav-cta):hover::after{right:0}
+.hero h1{max-width:950px}
+.hero-visual{cursor:default}
+.image-slot{isolation:isolate}
+.image-slot>img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .35s}
+.image-slot:hover>img{transform:scale(1.025);filter:brightness(.94) saturate(.9)}
+.work-card{cursor:zoom-in;transition:transform .25s,border-color .25s,background .25s}
+.work-card:hover{transform:translateY(-3px);border-color:#55555b}
+.work-card:focus-visible{outline:2px solid #eee;outline-offset:3px}
+.work-card img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.work-card:hover img{transform:scale(1.025)}
+.lightbox{display:none;position:fixed;inset:0;z-index:3000;background:rgba(0,0,0,.94);backdrop-filter:blur(18px);align-items:center;justify-content:center;padding:clamp(14px,3vw,38px);cursor:zoom-out}
+.lightbox.open{display:flex;animation:lightboxIn .18s ease-out}
+.lightbox img{display:block;max-width:min(1400px,94vw);max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:5px;box-shadow:0 24px 90px #000b;cursor:default}
+.lightbox button{position:fixed;top:18px;right:20px;z-index:2;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid #ffffff40;background:#ffffff12;color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.lightbox button:hover{background:#ffffff25;border-color:#ffffff80}
+@keyframes lightboxIn{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Teklif / danışma formu */
+.request-section{padding:92px 0 100px;border-top:1px solid #202023}
+.request-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:54px;align-items:start}
+.request-copy h2{font-size:clamp(34px,4.7vw,55px);line-height:1.04;letter-spacing:-.055em;margin:16px 0}
+.request-copy p{color:var(--secondary);font-size:14px;line-height:1.8;max-width:430px}
+.request-points{list-style:none;padding:0;margin:28px 0 0;color:#c8c8cc;font-size:13px;line-height:2.3}
+.request-points li:before{content:"✓";color:#ed292f;margin-right:10px}
+.request-form{background:#101012;border:1px solid #2a2a2e;border-radius:18px;padding:26px}
+.request-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.request-field{display:flex;flex-direction:column;gap:7px}
+.request-field.full{grid-column:1/-1}
+.request-field label{font-size:11px;color:#bdbdc2}
+.request-field input,.request-field select,.request-field textarea{width:100%;border:1px solid #39393f;background:#09090a;color:#f5f5f7;border-radius:9px;padding:13px;font:inherit;font-size:13px;outline:none}
+.request-field input:focus,.request-field select:focus,.request-field textarea:focus{border-color:#aaa}
+.request-field textarea{min-height:110px;resize:vertical}
+.request-form .submit-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.request-form button{background:#f5f5f7;color:#111;border:0;border-radius:22px;padding:13px 19px;font-weight:650;font-size:13px;cursor:pointer}
+.request-form button:disabled{opacity:.6;cursor:wait}
+.request-status{font-size:12px;color:#a8c97a;line-height:1.6;min-height:18px}
+.request-privacy{font-size:10px;color:#77777e;line-height:1.6;margin:14px 0 0}
+.admin-request-card{border:1px solid #34343a;border-radius:12px;padding:16px;margin-top:12px;background:#111113}
+.admin-request-card h4{margin:0 0 7px;font-size:14px}
+.admin-request-meta{display:flex;flex-wrap:wrap;gap:8px 14px;color:#aaaab0;font-size:11px;line-height:1.8}
+.admin-request-card p{font-size:12px;line-height:1.7;color:#dedee1;white-space:pre-wrap;margin:12px 0}
+.admin-request-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.admin-request-actions button{border:1px solid #3e3e44;background:#1a1a1d;color:#eee;padding:8px 11px;border-radius:7px;font-size:11px;cursor:pointer}
+.admin-request-actions button.primary{background:#f5f5f7;color:#111}
+.request-count{display:inline-flex;align-items:center;justify-content:center;min-width:23px;height:23px;border-radius:20px;background:#ed292f;color:#fff;font-size:11px;padding:0 6px;margin-left:5px}
+@media(max-width:780px){.request-layout{grid-template-columns:1fr;gap:26px}.request-form{padding:18px}}
+@media(max-width:540px){.request-form-grid{grid-template-columns:1fr}.request-field.full{grid-column:auto}.request-section{padding:72px 0}}
+</style></head>
+<body>
+<header><div class="wrap nav"><a href="#top" aria-label="AC/DC Bilişim ana sayfa"><img class="logo" src="acdc-logo.png" alt="AC/DC logo"></a><button class="hamb" aria-label="Menüyü aç" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button><nav class="navlinks"><a href="#hizmetler">Hizmetler</a><a href="#yaklasim">Yaklaşımımız</a><a href="#islerimiz">İşlerimiz</a><a href="#uygulamalar">Uygulamalar</a><a href="#teklif">Fiyat teklifi</a><a href="#iletisim">İletişim</a><a class="nav-cta" href="tel:+905303382741">Bizi arayın</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap"><div class="eyebrow">Kırklareli · Elektrik ve güvenlik sistemleri</div><h1>Teknoloji, olması<br>gerektiği gibi <span>çalışmalı.</span></h1><p>Elektrik altyapısı, güvenlik kamerası ve bağlantı çözümleri. İhtiyacınıza göre planlanan, özenle uygulanan işler.</p><div class="hero-actions"><a class="textlink" href="#hizmetler">Hizmetleri keşfedin ↗</a><a class="textlink" href="#teklif">Fiyat teklifi alın ↗</a></div></div></section>
+<section id="hizmetler"><div class="wrap"><div class="service-intro"><div class="section-kicker">Hizmetler</div><h2>İyi çalışan sistemler,<br>doğru planlamayla başlar.</h2><p>Yeni kurulumdan mevcut altyapının iyileştirilmesine kadar, mekânınıza ve kullanımınıza uygun seçenekleri birlikte değerlendiriyoruz.</p></div><div class="services" id="serviceGrid"></div></div></section>
+<section class="wrap"><div class="feature"><div class="feature-copy"><div class="section-kicker">Güvenlik sistemleri</div><h2>İçiniz rahat olsun.<br>Kontrol sizde kalsın.</h2><p>Doğru kamera yerleşimi ve ihtiyaca uygun kayıt düzeni, güvenlik sisteminin verimli kullanılmasına yardımcı olur. Kurulum öncesinde alanın ihtiyaçlarını birlikte belirleyelim.</p><a class="textlink" href="#iletisim">Kamera kurulumu hakkında ↗</a></div><div class="feature-image image-slot" id="featureVisual"><div class="photo-placeholder"><span>AC/DC</span><small>ÖNE ÇIKAN FOTOĞRAF</small><em>Yönetim panelinden gerçek iş fotoğrafınızı ekleyin</em></div></div></div></section>
+<section class="approach" id="yaklasim"><div class="wrap approach-grid"><div><div class="section-kicker">Çalışma yaklaşımımız</div><h2>Önce ihtiyaç.<br>Ardından çözüm.</h2><p class="approach-intro">Her işin koşulları farklıdır. İyi sonuç için kapsamı baştan netleştirmek ve doğru uygulamayı seçmek önemlidir.</p></div><div class="steps"><div class="step"><div class="step-no">01</div><div><h3>İhtiyacı anlayalım</h3><p>Alanı, beklentinizi ve önceliklerinizi konuşalım.</p></div></div><div class="step"><div class="step-no">02</div><div><h3>Uygulamayı planlayalım</h3><p>Altyapıya uygun seçenekleri ve işin kapsamını belirleyelim.</p></div></div><div class="step"><div class="step-no">03</div><div><h3>Kurup kontrol edelim</h3><p>Uygulama sonrasında sistemin temel çalışma durumunu birlikte kontrol edelim.</p></div></div></div></div></section>
+<section id="uygulamalar"><div class="wrap"><div class="gallery-head"><div><div class="section-kicker">Uygulama alanları</div><h2>Her ayrıntıda özen.</h2></div><p>Elektrik, güvenlik ve ağ altyapısı ihtiyaçları için konut ve işletmelere yönelik çözümler.</p></div><div class="gallery"><article class="gallery-main image-slot" id="galleryVisual1"><div class="photo-placeholder"><span>01</span><small>UYGULAMA FOTOĞRAFI</small><em>Yönetim panelinden fotoğraf ekleyin</em></div><div class="gallery-label"><small>01 / GÜVENLİK</small>Kamera sistemleri</div></article><div class="gallery-side"><article class="image-slot" id="galleryVisual2"><div class="photo-placeholder"><span>02</span><small>UYGULAMA FOTOĞRAFI</small><em>Yönetim panelinden fotoğraf ekleyin</em></div><div class="gallery-label"><small>02 / ELEKTRİK</small>Tesisat ve aydınlatma</div></article><article class="image-slot" id="galleryVisual3"><div class="photo-placeholder"><span>03</span><small>UYGULAMA FOTOĞRAFI</small><em>Yönetim panelinden fotoğraf ekleyin</em></div><div class="gallery-label"><small>03 / BAĞLANTI</small>Network çözümleri</div></article></div></div><p style="font-size:11px;color:#74747a;line-height:1.7;margin-top:14px">Bu alanda yalnızca yönetim panelinden yüklediğiniz gerçek uygulama fotoğrafları gösterilir.</p></div></section>
+
+<section class="work-section" id="islerimiz"><div class="wrap"><div class="sectionhead"><div><div class="section-kicker">İŞLERİMİZ</div><h2>Yaptığımız işlerden<br>örnekler.</h2></div><p>Tamamlanan uygulamalarımızdan örnekler. Her çalışmanın fotoğrafını, başlığını ve kısa açıklamasını yönetim panelinden ekleyebilirsiniz.</p></div><div class="work-grid" id="workGrid"><div class="work-empty">İş fotoğrafları yakında burada olacak.</div></div></div></section>
+
+<section class="request-section" id="teklif">
+ <div class="wrap request-layout">
+  <div class="request-copy">
+   <div class="section-kicker">Fiyat teklifi · Ön görüşme</div>
+   <h2>İhtiyacınızı anlatın.<br><span style="color:#8f8f94">Birlikte planlayalım.</span></h2>
+   <p>Elektrik, kamera veya ağ altyapısı için talebinizi bırakın. İşin kapsamını ve beklentinizi öğrenelim; uygun seçenekleri değerlendirmek için sizinle iletişime geçelim.</p>
+   <ul class="request-points"><li>Ücretsiz talep iletimi</li><li>İhtiyacınıza göre ön değerlendirme</li><li>Fiyat, keşif ve uygulama detaylarını görüşme</li></ul>
+  </div>
+  <form class="request-form" id="quoteForm">
+   <div class="request-form-grid">
+    <div class="request-field"><label for="rqName">Adınız soyadınız *</label><input id="rqName" name="name" autocomplete="name" required maxlength="100" placeholder="Ad Soyad"></div>
+    <div class="request-field"><label for="rqPhone">Telefon numaranız *</label><input id="rqPhone" name="phone" autocomplete="tel" required maxlength="30" placeholder="05xx xxx xx xx"></div>
+    <div class="request-field"><label for="rqType">Hangi hizmet? *</label><select id="rqType" name="service" required><option value="">Hizmet seçin</option><option>Elektrik tesisatı / arıza</option><option>Güvenlik kamerası</option><option>Alarm sistemi</option><option>Network / internet altyapısı</option><option>Bakım ve onarım</option><option>Birden fazla hizmet</option><option>Diğer</option></select></div>
+    <div class="request-field"><label for="rqPlace">İlçe / uygulama yeri</label><input id="rqPlace" name="place" maxlength="120" placeholder="Örn. Kırklareli merkez"></div>
+    <div class="request-field"><label for="rqBudget">Tahmini bütçe (isteğe bağlı)</label><select id="rqBudget" name="budget"><option value="">Belirtmek istemiyorum</option><option>5.000 TL altı</option><option>5.000–15.000 TL</option><option>15.000–30.000 TL</option><option>30.000–60.000 TL</option><option>60.000 TL üzeri</option><option>Keşif sonrası değerlendirelim</option></select></div>
+    <div class="request-field"><label for="rqTiming">Ne zaman yapılmalı?</label><select id="rqTiming" name="timing"><option value="">Henüz net değil</option><option>En kısa sürede</option><option>1–2 hafta içinde</option><option>Bu ay içinde</option><option>İleri tarihli planlama</option></select></div>
+    <div class="request-field full"><label for="rqDetails">İşin detayları *</label><textarea id="rqDetails" name="details" required maxlength="3000" placeholder="Kaç kamera düşündüğünüz, alanın büyüklüğü, yapılacak elektrik işi veya diğer ayrıntılar..."></textarea></div>
+   </div>
+   <div class="submit-row"><button id="rqSubmit" type="submit">Talep gönder ↗</button><div class="request-status" id="rqStatus" role="status" aria-live="polite"></div></div>
+   <p class="request-privacy">Bu bilgiler yalnızca talebinizi değerlendirmek ve sizinle iletişim kurmak için kullanılır. Lütfen formda şifre veya hassas kişisel bilgi paylaşmayın.</p>
+  </form>
+ </div>
+</section>
+
+<section class="contact" id="iletisim"><div class="wrap"><div class="section-kicker">AC/DC Bilişim · Kırklareli</div><h2>Projeniz için<br>birlikte doğru adımı atalım.</h2><p>Elektrik, kamera veya güvenlik sistemi ihtiyacınızı anlatın. İşin kapsamını birlikte değerlendirelim.</p><div class="contact-actions"><a class="pill primary" href="tel:+905303382741">0530 338 27 41 ↗</a><a class="pill" href="https://wa.me/905303382741?text=Merhaba%2C%20AC%2FDC%20Bili%C5%9Fim%20hizmetleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp</a><a class="pill" href="https://www.google.com/maps/search/?api=1&query=AC%2FDC%20Bili%C5%9Fim%20K%C4%B1rklareli" target="_blank" rel="noopener">Haritada görüntüle</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-top"><a href="#top"><img class="footer-logo" src="acdc-logo.png" alt="AC/DC Bilişim"></a><div class="footer-links"><a href="#hizmetler">Hizmetler</a><a href="#yaklasim">Yaklaşımımız</a><a href="#uygulamalar">Uygulamalar</a><a href="tel:+905303382741">0530 338 27 41</a></div></div><div class="legal"><span>© 2026 AC/DC Elektirik & Bilişim</span><span>Elektrik · Güvenlik · Teknoloji</span></div></div></footer>
+
+<div class="admin-modal" id="adminModal" role="dialog" aria-modal="true" aria-label="AC/DC Yönetim Paneli">
+<div class="admin-window">
+<div class="admin-top"><div><h2>AC/DC · Yönetim Paneli</h2><span>Site içeriği ve işlerimiz</span></div><button class="admin-close" onclick="ACDC.closeAdmin()" aria-label="Kapat">×</button></div>
+<div class="admin-body">
+<div id="adminLogin" class="admin-login">
+<h3>Yönetici girişi</h3><p>Site metinlerini, görsellerini ve iş portföyünü buradan düzenleyebilirsiniz.</p>
+<div class="admin-grid">
+<div class="admin-field full"><label for="adminUser">Kullanıcı adı</label><input id="adminUser" autocomplete="username" value="acdcadmin"></div>
+<div class="admin-field full"><label for="adminPass">Şifre</label><input id="adminPass" type="password" autocomplete="current-password" placeholder="Demo şifresini girin"></div>
+</div><div class="admin-actions"><button class="admin-btn" onclick="ACDC.login()">Giriş yap</button></div><div class="admin-status" id="loginStatus"></div>
+<div class="admin-note" style="margin-top:18px">Demo giriş bilgileri: <b>acdcadmin</b> / <b>ACdc2026!</b>. Bu statik demo gerçek bir güvenli yönetici sistemi değildir; canlı siteye taşırken sunucu taraflı kimlik doğrulama gerekir.</div>
+</div>
+<div id="adminDashboard" style="display:none">
+<div class="admin-note">Bu demo değişiklikleri bu tarayıcıda saklar. Gerçek sitede tüm ziyaretçilere yayınlamak için sunucu ve veritabanı bağlantısı gerekir. Sitede stok/AI görsel yok; fotoğraf alanlarına kendi gerçek iş fotoğraflarını yükle.</div>
+<div class="admin-tabs">
+<button class="active" onclick="ACDC.tab('sitePane',this)">Metinler & menü</button>
+<button onclick="ACDC.tab('servicePane',this)">Hizmetler</button>
+<button onclick="ACDC.tab('photoPane',this)">Fotoğraflar</button>
+<button onclick="ACDC.tab('workPane',this)">İşlerimiz</button>
+<button onclick="ACDC.tab('stylePane',this)">Görünüm</button>
+<button onclick="ACDC.tab('requestPane',this)">Teklif talepleri <span id="requestCount" class="request-count" style="display:none">0</span></button><button onclick="ACDC.tab('accountPane',this)">Hesap</button>
+</div>
+<div class="admin-pane active" id="sitePane">
+<div class="admin-grid">
+<div class="admin-field"><label>Ana başlık (yeni satır için Enter)</label><textarea id="editHeroTitle"></textarea></div>
+<div class="admin-field"><label>Ana açıklama</label><textarea id="editHeroText"></textarea></div>
+<div class="admin-field"><label>Hizmetler başlığı</label><textarea id="editServicesTitle"></textarea></div>
+<div class="admin-field"><label>Hizmetler açıklaması</label><textarea id="editServicesText"></textarea></div>
+<div class="admin-field"><label>Öne çıkan bölüm başlığı</label><textarea id="editFeatureTitle"></textarea></div>
+<div class="admin-field"><label>Öne çıkan bölüm açıklaması</label><textarea id="editFeatureText"></textarea></div>
+<div class="admin-field"><label>Yaklaşım bölümü başlığı</label><textarea id="editApproachTitle"></textarea></div>
+<div class="admin-field"><label>Yaklaşım bölümü açıklaması</label><textarea id="editApproachText"></textarea></div>
+<div class="admin-field"><label>İşlerimiz başlığı</label><textarea id="editWorksTitle"></textarea></div>
+<div class="admin-field"><label>İşlerimiz açıklaması</label><textarea id="editWorksText"></textarea></div>
+<div class="admin-field"><label>İletişim başlığı</label><textarea id="editContactTitle"></textarea></div>
+<div class="admin-field"><label>İletişim açıklaması</label><textarea id="editContactText"></textarea></div>
+<div class="admin-field"><label>Telefon numarası</label><input id="editPhone"></div>
+<div class="admin-field"><label>Alt bilgi / işletme kısa adı</label><input id="editFooterName"></div>
+<div class="admin-field"><label>Menü: Hizmetler</label><input id="editNavServices"></div>
+<div class="admin-field"><label>Menü: Yaklaşımımız</label><input id="editNavApproach"></div>
+<div class="admin-field"><label>Menü: İşlerimiz</label><input id="editNavWorks"></div>
+<div class="admin-field"><label>Menü: Uygulamalar</label><input id="editNavGallery"></div>
+<div class="admin-field"><label>Menü: İletişim</label><input id="editNavContact"></div>
+<div class="admin-field"><label>Menü: Telefon düğmesi</label><input id="editNavCall"></div>
+</div>
+<div class="admin-actions"><button class="admin-btn" onclick="ACDC.saveSite()">Tüm metinleri kaydet</button></div><div class="admin-status" id="siteStatus"></div>
+</div>
+<div class="admin-pane" id="servicePane">
+<p style="font-size:12px;color:#a1a1a6;line-height:1.7">Hizmet kartlarını buradan düzenle, yenisini ekle veya kaldır. Değişiklikler ana sayfaya yansır.</p>
+<div id="serviceAdminList"></div>
+<div class="admin-actions"><button class="admin-btn" onclick="ACDC.addService()">+ Yeni hizmet ekle</button><button class="admin-btn secondary" onclick="ACDC.saveServices()">Hizmetleri kaydet</button></div><div class="admin-status" id="serviceStatus"></div>
+</div>
+<div class="admin-pane" id="photoPane">
+<div class="admin-note">Fotoğraf üretmiyoruz veya otomatik AI görseli kullanmıyoruz. Gerçek çektiğin iş fotoğraflarını seç. Büyük dosyalar otomatik küçültülür.</div>
+<div class="admin-grid">
+<div class="admin-field full"><label>Logo dosyası (PNG/JPG)</label><input type="file" id="editLogoFile" accept="image/*"><img id="logoPreview" style="max-width:170px;max-height:75px;object-fit:contain;margin-top:8px" alt="Logo önizleme"></div>
+<div class="admin-field full"><label>Ana kapak görseli</label><p style="font-size:11px;color:#999;line-height:1.6;margin:0">Ana kapakta fotoğraf kullanılmıyor. Sade ve kurumsal görünüm korunur.</p></div>
+<div class="admin-field full"><label>Öne çıkan bölüm fotoğrafı</label><input type="file" id="editFeatureFile" accept="image/*"><img id="featurePreview" style="width:100%;max-height:130px;object-fit:cover;margin-top:8px" alt="Öne çıkan fotoğraf önizleme"></div>
+<div class="admin-field"><label>Galeri fotoğrafı 1</label><input type="file" id="editGallery1" accept="image/*"><img id="galleryPreview1" style="width:100%;max-height:120px;object-fit:cover;margin-top:8px" alt="Galeri 1 önizleme"></div>
+<div class="admin-field"><label>Galeri fotoğrafı 2</label><input type="file" id="editGallery2" accept="image/*"><img id="galleryPreview2" style="width:100%;max-height:120px;object-fit:cover;margin-top:8px" alt="Galeri 2 önizleme"></div>
+<div class="admin-field"><label>Galeri fotoğrafı 3</label><input type="file" id="editGallery3" accept="image/*"><img id="galleryPreview3" style="width:100%;max-height:120px;object-fit:cover;margin-top:8px" alt="Galeri 3 önizleme"></div>
+</div><div class="admin-actions"><button class="admin-btn" onclick="ACDC.savePhotos()">Fotoğrafları kaydet</button><button class="admin-btn secondary" onclick="ACDC.clearPhotos()">Yüklenen fotoğrafları kaldır</button></div><div class="admin-status" id="photoStatus"></div>
+</div>
+<div class="admin-pane" id="workPane">
+<div class="admin-grid">
+<div class="admin-field"><label>Çalışma başlığı</label><input id="newWorkTitle" placeholder="Örn. İşyeri kamera kurulumu"></div>
+<div class="admin-field"><label>İş türü / kategori</label><input id="newWorkType" placeholder="Örn. Güvenlik kamerası"></div>
+<div class="admin-field full"><label>Açıklama</label><textarea id="newWorkDesc" placeholder="Yapılan çalışmayı kısaca anlatın"></textarea></div>
+<div class="admin-field full"><label>Gerçek çalışma fotoğrafları (birden fazla seçebilirsin)</label><input type="file" id="newWorkImage" accept="image/*" multiple><p style="font-size:11px;color:#999;margin:0">Ctrl ile birden fazla fotoğraf seçebilirsin. İlk fotoğraf kartın kapak fotoğrafı olur.</p></div>
+</div><div class="admin-actions"><button class="admin-btn" onclick="ACDC.addWork()">İşi ekle</button></div><div class="admin-status" id="workStatus"></div><div id="workAdminList"></div>
+</div>
+<div class="admin-pane" id="stylePane">
+<div class="admin-grid">
+<div class="admin-field"><label>Arka plan rengi</label><input type="color" id="editBgColor" value="#050505"></div>
+<div class="admin-field"><label>Vurgu rengi</label><input type="color" id="editAccentColor" value="#ed292f"></div>
+<div class="admin-field"><label>Kart rengi</label><input type="color" id="editCardColor" value="#111113"></div>
+<div class="admin-field"><label>Metin rengi</label><input type="color" id="editTextColor" value="#f5f5f7"></div>
+<div class="admin-field"><label>Yazı tipi</label><select id="editFont" style="background:#151518;border:1px solid #39393f;color:#fff;border-radius:8px;padding:12px"><option value="system">BeakMayS Yazı Fontu</option><option value="Arial,Helvetica,sans-serif">Arial</option><option value="Georgia,serif">Georgia</option><option value="'Trebuchet MS',sans-serif">Trebuchet MS</option></select></div>
+</div><div class="admin-actions"><button class="admin-btn" onclick="ACDC.saveStyle()">Görünümü uygula</button><button class="admin-btn secondary" onclick="ACDC.resetStyle()">Varsayılan görünüm</button></div><div class="admin-status" id="styleStatus"></div>
+</div>
+
+<div class="admin-pane" id="requestPane">
+ <div class="admin-note">Ziyaretçilerin fiyat teklifi ve danışma formundan gönderdiği talepler burada görünür. Talep durumunu değiştirip not ekleyebilir, CSV olarak dışa aktarabilirsin.</div>
+ <div class="admin-actions" style="margin-bottom:16px"><button class="admin-btn" onclick="ACDC.refreshRequests()">Talepleri yenile</button><button class="admin-btn secondary" onclick="ACDC.exportRequests()">CSV dışa aktar</button></div>
+ <div id="requestAdminStatus" class="admin-status" style="margin-bottom:12px"></div>
+ <div id="requestAdminList"><p style="color:#aaa;font-size:12px">Talepleri görmek için yönetici girişi yapıp yenileyin.</p></div>
+</div>
+
+<div class="admin-pane" id="accountPane">
+<div class="admin-grid"><div class="admin-field"><label>Yeni demo kullanıcı adı</label><input id="newAdminUser" value="acdcadmin"></div><div class="admin-field"><label>Yeni demo şifresi (en az 8 karakter)</label><input id="newAdminPass" type="password"></div></div>
+<div class="admin-actions"><button class="admin-btn" onclick="ACDC.changeCredentials()">Giriş bilgilerini değiştir</button><button class="admin-btn secondary" onclick="ACDC.logout()">Çıkış yap</button></div><div class="admin-status" id="accountStatus"></div>
+<p style="color:#9b9ba1;font-size:11px;line-height:1.7;margin-top:18px">Bu demo girişi gerçek güvenlik sağlamaz. İnternete açık canlı site için sunucu tarafında kimlik doğrulama gerekir.</p>
+</div>
+</div>
+</div></div></div></div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotoğrafı büyüt"><button id="lightboxClose" type="button" aria-label="Kapat" title="Kapat (Esc)">×</button><img id="lightboxImage" alt="Büyütülmüş çalışma fotoğrafı"></div>
+<script>
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
+window.ACDC=(()=>{
+const defaults={
+heroTitle:'Teknoloji, olması\ngerektiği gibi çalışmalı.',
+heroText:'Elektrik altyapısı, güvenlik kamerası ve bağlantı çözümleri. İhtiyacınıza göre planlanan, özenle uygulanan işler.',
+servicesTitle:'İyi çalışan sistemler,\ndoğru planlamayla başlar.',
+servicesText:'Yeni kurulumdan mevcut altyapının iyileştirilmesine kadar, mekânınıza ve kullanımınıza uygun seçenekleri birlikte değerlendiriyoruz.',
+featureTitle:'İçiniz rahat olsun.\nKontrol sizde kalsın.',
+featureText:'Doğru kamera yerleşimi ve ihtiyaca uygun kayıt düzeni, güvenlik sisteminin verimli kullanılmasına yardımcı olur. Kurulum öncesinde alanın ihtiyaçlarını birlikte belirleyelim.',
+approachTitle:'Önce ihtiyaç.\nArdından çözüm.',
+approachText:'Her işin koşulları farklıdır. İyi sonuç için kapsamı baştan netleştirmek ve doğru uygulamayı seçmek önemlidir.',
+worksTitle:'Her ayrıntıda özen.',
+worksText:'Elektrik, güvenlik ve ağ altyapısı ihtiyaçları için konut ve işletmelere yönelik çözümler.',
+contactTitle:'Projeniz için\nbirlikte doğru adımı atalım.',
+contactText:'Elektrik, kamera veya güvenlik sistemi ihtiyacınızı anlatın. İşin kapsamını birlikte değerlendirelim.',
+phone:'0530 338 27 41',footerName:'AC/DC Elektirik & Bilişim ',
+navServices:'Hizmetler',navApproach:'Yaklaşımımız',navWorks:'İşlerimiz',navGallery:'Uygulamalar',navContact:'İletişim',navCall:'Bizi arayın'
+};
+const defaultServices=[
+{title:'Elektrik tesisatı',desc:'Yeni tesisat, yenileme, aydınlatma ve elektrik arızalarına yönelik uygulamalar.',icon:'⌁'},
+{title:'Güvenlik kameraları',desc:'Konut ve işletmeler için kamera kurulumu, kayıt ve uzaktan görüntüleme çözümleri.',icon:'◉'},
+{title:'Alarm sistemleri',desc:'Alanınızın özelliklerine ve güvenlik ihtiyacına göre değerlendirilen sistemler.',icon:'⌑'},
+{title:'Network altyapısı',desc:'Ağ bağlantıları, internet altyapısı ve düzenli kablolama uygulamaları.',icon:'⌘'},
+{title:'Bakım ve arıza',desc:'Mevcut sistemlerde sorun tespiti, kontrol ve teknik müdahale.',icon:'＋'},
+{title:'Yerinde keşif',desc:'İş kapsamını ve uygulanabilir seçenekleri yerinde değerlendirerek planlama.',icon:'↗'}
+];
+const defaultStyle={bg:'#050505',accent:'#ed292f',card:'#111113',text:'#f5f5f7',font:'system'};
+let state={site:{...defaults},works:[],services:defaultServices.map(x=>({...x})),photos:{},style:{...defaultStyle},credentials:{user:'acdcadmin',pass:'ACdc2026!'}};
+let pending={},pendingWorkImages=[];
+const $=id=>document.getElementById(id);
+const siteFields=Object.keys(defaults);
+let adminLoggedIn=false;
+function applyStateData(s){if(!s||typeof s!=='object')return;state={...state,...s,site:{...defaults,...(s.site||{})},services:Array.isArray(s.services)?s.services:defaultServices.map(x=>({...x})),photos:s.photos||{},style:{...defaultStyle,...(s.style||{})},credentials:state.credentials};}
+function load(){try{const s=JSON.parse(localStorage.getItem('acdcSiteAdminV2')||'null');if(s)applyStateData(s);}catch(e){}}
+async function persist(){try{localStorage.setItem('acdcSiteAdminV2',JSON.stringify(state));}catch(e){return false}if(!adminLoggedIn)return true;try{const r=await fetch('/api/admin/site-state',{method:'PUT',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(state)});const d=await r.json().catch(()=>({}));if(!r.ok){console.error('Sunucuya kaydedilemedi:',d.error||r.status);return false}return true}catch(e){console.error('Sunucuya kaydedilemedi:',e);return false}}
+async function loadSharedState(){try{const r=await fetch('/api/site-state',{cache:'no-store'});if(!r.ok)return;const d=await r.json();if(d.state){applyStateData(d.state);try{localStorage.setItem('acdcSiteAdminV2',JSON.stringify(state))}catch(e){}applySite();}}catch(e){console.warn('Ortak site ayarları yüklenemedi',e)}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function multiline(s){return esc(s).replace(/\n/g,'<br>')}
+function openLogin(){$('adminModal').classList.add('open');$('adminLogin').style.display='block';$('adminDashboard').style.display='none';$('loginStatus').textContent='';$('adminPass').value=''}
+function closeAdmin(){$('adminModal').classList.remove('open')}
+async function login(){try{const r=await fetch('/api/admin/login',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({username:$('adminUser').value,password:$('adminPass').value})});const d=await r.json();if(!r.ok)throw new Error(d.error||'Kullanıcı adı veya şifre yanlış.');adminLoggedIn=true;const sr=await fetch('/api/admin/site-state',{credentials:'same-origin',cache:'no-store'});if(sr.ok){const sd=await sr.json();if(sd.state)applyStateData(sd.state)}$('adminLogin').style.display='none';$('adminDashboard').style.display='block';applySite();fillEditor();renderServiceAdmin();renderWorkAdmin();refreshRequests()}catch(e){$('loginStatus').textContent=e.message==='Failed to fetch'?'Sunucu çalışmıyor. start-localhost.bat ile başlat.':e.message}}
+async function logout(){adminLoggedIn=false;try{await fetch('/api/admin/logout',{method:'POST',credentials:'same-origin'})}catch(e){}$('adminLogin').style.display='block';$('adminDashboard').style.display='none';$('adminPass').value='';$('accountStatus').textContent='Çıkış yapıldı.'}
+function tab(id,button){document.querySelectorAll('.admin-pane').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.admin-tabs button').forEach(b=>b.classList.remove('active'));$(id).classList.add('active');button.classList.add('active')}
+function fileToData(file,cb){if(!file)return;const reader=new FileReader();reader.onload=()=>{const img=new Image();img.onload=()=>{const max=1400,scale=Math.min(1,max/Math.max(img.width,img.height));const c=document.createElement('canvas');c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));c.getContext('2d').drawImage(img,0,0,c.width,c.height);cb(c.toDataURL('image/jpeg',.78))};img.src=reader.result};reader.readAsDataURL(file)}
+function fillEditor(){const map={HeroTitle:'heroTitle',HeroText:'heroText',ServicesTitle:'servicesTitle',ServicesText:'servicesText',FeatureTitle:'featureTitle',FeatureText:'featureText',ApproachTitle:'approachTitle',ApproachText:'approachText',WorksTitle:'worksTitle',WorksText:'worksText',ContactTitle:'contactTitle',ContactText:'contactText',Phone:'phone',FooterName:'footerName',NavServices:'navServices',NavApproach:'navApproach',NavWorks:'navWorks',NavGallery:'navGallery',NavContact:'navContact',NavCall:'navCall'};Object.entries(map).forEach(([id,key])=>{if($(('edit'+id)))$('edit'+id).value=state.site[key]||''});$('editBgColor').value=state.style.bg;$('editAccentColor').value=state.style.accent;$('editCardColor').value=state.style.card;$('editTextColor').value=state.style.text;$('editFont').value=state.style.font;$('logoPreview').src=state.photos.logo||'acdc-logo.png';$('heroPreview').src=state.photos.hero||'';$('featurePreview').src=state.photos.feature||'';['gallery1','gallery2','gallery3'].forEach((k,i)=>$(('galleryPreview'+(i+1))).src=state.photos[k]||'')}
+function saveSite(){const map={HeroTitle:'heroTitle',HeroText:'heroText',ServicesTitle:'servicesTitle',ServicesText:'servicesText',FeatureTitle:'featureTitle',FeatureText:'featureText',ApproachTitle:'approachTitle',ApproachText:'approachText',WorksTitle:'worksTitle',WorksText:'worksText',ContactTitle:'contactTitle',ContactText:'contactText',Phone:'phone',FooterName:'footerName',NavServices:'navServices',NavApproach:'navApproach',NavWorks:'navWorks',NavGallery:'navGallery',NavContact:'navContact',NavCall:'navCall'};Object.entries(map).forEach(([id,key])=>{if($('edit'+id))state.site[key]=$('edit'+id).value});const ok=persist();applySite();$('siteStatus').textContent=ok?'Metinler ve menü güncellendi.':'Kaydedilemedi; tarayıcı depolama alanı dolu olabilir.'}
+function applySite(){const s=state.site;const set=(sel,val,html=false)=>{const el=document.querySelector(sel);if(el){if(html)el.innerHTML=multiline(val);else el.textContent=val}};
+set('.hero h1',s.heroTitle,true);set('.hero-inner p',s.heroText);
+set('.service-intro h2',s.servicesTitle,true);set('.service-intro p',s.servicesText);
+set('.feature-copy h2',s.featureTitle,true);set('.feature-copy p',s.featureText);
+set('.approach h2',s.approachTitle,true);set('.approach-intro',s.approachText);
+set('.gallery-head h2',s.worksTitle,true);set('.gallery-head p',s.worksText);
+set('.contact h2',s.contactTitle,true);set('.contact p',s.contactText);
+const navMap=[['a[href="#hizmetler"]',s.navServices],['a[href="#yaklasim"]',s.navApproach],['a[href="#islerimiz"]',s.navWorks],['a[href="#uygulamalar"]',s.navGallery],['a[href="#iletisim"]',s.navContact]];
+navMap.forEach(([sel,val])=>{const el=document.querySelector('.navlinks '+sel);if(el)el.textContent=val});
+const call=document.querySelector('.navlinks .nav-cta');if(call)call.textContent=s.navCall;
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>{a.href='tel:'+s.phone.replace(/[^\d+]/g,'');if(a.classList.contains('pill')||a.closest('.footcol'))a.textContent=s.phone;});
+document.querySelectorAll('footer .brandname').forEach(el=>el.textContent=s.footerName);
+renderServices();renderWorks();applyPhotos();applyStyle()}
+function renderServices(){const grid=$('serviceGrid');if(!grid)return;grid.innerHTML=state.services.map((v,i)=>`<article class="service"><div class="service-icon">${esc(v.icon||'＋')}</div><h3>${esc(v.title)}</h3><p>${esc(v.desc)}</p></article>`).join('')}
+function renderServiceAdmin(){const el=$('serviceAdminList');el.innerHTML=state.services.map((v,i)=>`<div class="work-editor"><div class="admin-grid"><div class="admin-field"><label>Hizmet adı</label><input id="svcTitle${i}" value="${esc(v.title)}"></div><div class="admin-field"><label>Simge (tek karakter)</label><input id="svcIcon${i}" value="${esc(v.icon||'＋')}"></div><div class="admin-field full"><label>Açıklama</label><textarea id="svcDesc${i}">${esc(v.desc)}</textarea></div></div><div class="admin-actions"><button class="admin-btn danger" onclick="ACDC.removeService(${i})">Hizmeti kaldır</button></div></div>`).join('')}
+async function saveServices(){state.services=state.services.map((v,i)=>({title:$('svcTitle'+i)?.value.trim()||v.title,icon:$('svcIcon'+i)?.value||'＋',desc:$('svcDesc'+i)?.value.trim()||''}));renderServices();$('serviceStatus').textContent='Kaydediliyor…';const ok=await persist();renderServiceAdmin();$('serviceStatus').textContent=ok?'Hizmetler kaydedildi ve ana sayfaya uygulandı.':'Sunucuya kaydedilemedi. Oturumu kontrol edin veya fotoğrafları küçültün.'}
+function addService(){state.services.push({title:'Yeni hizmet',desc:'Hizmet açıklamasını buraya yazın.',icon:'＋'});renderServiceAdmin();$('serviceStatus').textContent='Yeni hizmet alanı eklendi. Alanları doldurup “Hizmetleri kaydet” düğmesine basın.'}
+async function removeService(i){state.services.splice(i,1);renderServiceAdmin();renderServices();const ok=await persist();$('serviceStatus').textContent=ok?'Hizmet kaldırıldı.':'Sunucuya kaydedilemedi.'}
+function savePhotos(){Object.assign(state.photos,pending);pending={};const ok=persist();applyPhotos();fillEditor();$('photoStatus').textContent=ok?'Fotoğraflar kaydedildi.':'Kaydedilemedi; daha küçük görsel dosyaları deneyin.'}
+function clearPhotos(){state.photos={};pending={};persist();applyPhotos();fillEditor();$('photoStatus').textContent='Yüklenen fotoğraflar kaldırıldı; fotoğraf alanları boş bırakıldı.'}
+function applyPhotos(){const setImg=(slot,key,alt)=>{const el=$(slot);if(!el)return;const data=state.photos[key];if(data){let img=el.querySelector(':scope > img');if(!img){img=document.createElement('img');el.insertBefore(img,el.firstChild)}img.src=data;img.alt=alt;const ph=el.querySelector(':scope > .photo-placeholder');if(ph)ph.remove();el.classList.add('image-slot');el.onclick=()=>openLightbox(data,alt);if(slot==='heroVisual'&&!el.querySelector('.visual-caption')){const cap=document.createElement('div');cap.className='visual-caption';cap.textContent='Elektrik · Güvenlik · Bağlantı';el.appendChild(cap)}}else{const old=el.querySelector(':scope > img');if(old)old.remove();if(!el.querySelector(':scope > .photo-placeholder')){const ph=document.createElement('div');ph.className='photo-placeholder';let n=slot.match(/\d/)?.[0]||'';ph.innerHTML=`<span>${slot==='heroVisual'||slot==='featureVisual'?'AC/DC':n}</span><small>${slot==='heroVisual'?'ANA KAPAK FOTOĞRAFI':slot==='featureVisual'?'ÖNE ÇIKAN FOTOĞRAF':'UYGULAMA FOTOĞRAFI'}</small><em>Yönetim panelinden gerçek iş fotoğrafınızı ekleyin</em>`;el.insertBefore(ph,el.firstChild)}el.onclick=null}};setImg('featureVisual','feature','Öne çıkan fotoğraf');setImg('galleryVisual1','gallery1','Uygulama fotoğrafı 1');setImg('galleryVisual2','gallery2','Uygulama fotoğrafı 2');setImg('galleryVisual3','gallery3','Uygulama fotoğrafı 3');document.querySelectorAll('img.logo,.footer-logo').forEach(img=>img.src=state.photos.logo||'acdc-logo.png')}
+function saveStyle(){state.style={bg:$('editBgColor').value,accent:$('editAccentColor').value,card:$('editCardColor').value,text:$('editTextColor').value,font:$('editFont').value};persist();applyStyle();$('styleStatus').textContent='Görünüm güncellendi.'}
+function applyStyle(){const r=document.documentElement;r.style.setProperty('--bg',state.style.bg);r.style.setProperty('--accent',state.style.accent);r.style.setProperty('--surface',state.style.card);r.style.setProperty('--text',state.style.text);document.body.style.background=state.style.bg;document.body.style.color=state.style.text;document.body.style.fontFamily=state.style.font==='system'?'-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif':state.style.font;document.querySelectorAll('.service').forEach(el=>el.style.background=state.style.card)}
+function resetStyle(){state.style={...defaultStyle};persist();fillEditor();applyStyle();$('styleStatus').textContent='Varsayılan görünüm geri yüklendi.'}
+async function addWork(){const title=$('newWorkTitle').value.trim(),desc=$('newWorkDesc').value.trim(),type=$('newWorkType').value.trim();if(!title||!desc){$('workStatus').textContent='Başlık ve açıklama alanlarını doldurun.';return}if(!pendingWorkImages.length){$('workStatus').textContent='En az bir gerçek çalışma fotoğrafı seçin.';return}const work={id:Date.now().toString(),title,desc,type:type||'Uygulama',images:[...pendingWorkImages],image:pendingWorkImages[0]};state.works.unshift(work);$('workStatus').textContent='İş ve fotoğraflar kaydediliyor…';const ok=await persist();if(!ok){state.works.shift();$('workStatus').textContent='Sunucuya kaydedilemedi. Daha az/küçük fotoğraf seçip tekrar deneyin.';return}$('newWorkTitle').value='';$('newWorkDesc').value='';$('newWorkType').value='';$('newWorkImage').value='';pendingWorkImages=[];$('workStatus').textContent='İş ve tüm fotoğraflar kaydedildi.';renderWorks();renderWorkAdmin()}
+function renderWorks(){const grid=$('workGrid');if(!grid)return;if(!state.works.length){grid.innerHTML='<div class="work-empty">Henüz iş eklenmedi. Yönetim panelinden kendi gerçek iş fotoğraflarını ekleyebilirsin.</div>';return}grid.innerHTML=state.works.map(w=>{const imgs=Array.isArray(w.images)&&w.images.length?w.images:[w.image].filter(Boolean);return `<article class="work-card" tabindex="0" role="button" data-work-id="${esc(w.id)}" aria-label="Fotoğrafı büyüt: ${esc(w.title)}"><img src="${imgs[0]||''}" alt="${esc(w.title)}" data-work-image="${esc(imgs[0]||'')}"><div class="work-copy"><small>${esc(w.type)}</small><h3>${esc(w.title)}</h3><p>${esc(w.desc)}</p>${imgs.length>1?`<div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:12px">${imgs.map((im,i)=>`<img src="${im}" alt="${esc(w.title)} fotoğraf ${i+1}" data-work-image="${im}" style="width:64px;height:48px;object-fit:cover;border-radius:6px;cursor:zoom-in;position:static" />`).join('')}</div>`:''}<span style="display:inline-block;color:#2997ff;font-size:12px;margin-top:12px">Fotoğrafı büyüt ↗</span></div></article>`}).join('')}
+function renderWorkAdmin(){const el=$('workAdminList');if(!el)return;if(!state.works.length){el.innerHTML='<p style="color:#9b9ba1;font-size:12px">Henüz iş kaydı yok.</p>';return}el.innerHTML=state.works.map(w=>{const imgs=Array.isArray(w.images)&&w.images.length?w.images:[w.image].filter(Boolean);return `<div class="work-editor"><div style="display:flex;gap:14px;align-items:start"><div style="display:flex;gap:5px;flex-wrap:wrap;max-width:220px">${imgs.map(im=>`<img src="${im}" alt="" style="width:65px;height:52px;object-fit:cover;border-radius:7px">`).join('')}</div><div style="flex:1"><h4>${esc(w.title)}</h4><div style="font-size:11px;color:#9b9ba1;line-height:1.6">${esc(w.type)} · ${esc(w.desc)} · ${imgs.length} fotoğraf</div></div><button class="admin-btn danger" onclick="ACDC.deleteWork('${w.id}')">Sil</button></div></div>`}).join('')}
+async function deleteWork(id){state.works=state.works.filter(w=>w.id!==id);renderWorks();renderWorkAdmin();const ok=await persist();$('workStatus').textContent=ok?'İş silindi.':'Sunucuya kaydedilemedi.'}
+function openLightbox(input,alt){let image=input,caption=alt||'Fotoğraf';const w=state.works.find(x=>x.id===input);if(w){image=w.image;caption=w.title}if(!String(image).startsWith('data:image'))return;const box=$('lightbox');box.style.display='flex';$('lightboxImage').src=image;$('lightboxImage').alt=caption;box.classList.add('open');document.body.style.overflow='hidden'}
+function closeLightbox(){const box=$('lightbox');if(!box)return;box.classList.remove('open');box.style.display='none';document.body.style.overflow='';$('lightboxImage').src='';}
+
+let requestsCache=[];
+async function sendQuote(form){
+ const status=$('rqStatus'),btn=$('rqSubmit');status.textContent='';btn.disabled=true;
+ const payload=Object.fromEntries(new FormData(form).entries());
+ try{
+  const r=await fetch('/api/requests',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+  const data=await r.json().catch(()=>({}));
+  if(!r.ok)throw new Error(data.error||'Talep gönderilemedi. Lütfen tekrar deneyin.');
+  form.reset();status.textContent='Talebiniz alındı. En kısa sürede sizinle iletişime geçeceğiz.';
+ }catch(e){status.textContent=e.message==='Failed to fetch'?'Sunucu çalışmıyor. Localhost sunucusunu başlatıp tekrar deneyin.':e.message;status.style.color='#ff9b9b'}
+ finally{btn.disabled=false}
+}
+async function refreshRequests(){
+ const box=$('requestAdminList'),status=$('requestAdminStatus');status.textContent='Talepler yükleniyor…';
+ try{
+  const r=await fetch('/api/admin/requests',{credentials:'same-origin'});
+  if(r.status===401){status.textContent='Oturum bulunamadı. Yönetici girişini yeniden yap.';return}
+  const data=await r.json();if(!r.ok)throw new Error(data.error||'Talepler alınamadı');
+  requestsCache=data.requests||[];const unread=requestsCache.filter(x=>x.status==='Yeni').length;
+  const count=$('requestCount');count.textContent=unread;count.style.display=unread?'inline-flex':'none';
+  if(!requestsCache.length){box.innerHTML='<p style="color:#aaa;font-size:12px">Henüz teklif veya danışma talebi yok.</p>'}
+  else box.innerHTML=requestsCache.map(q=>`<article class="admin-request-card"><h4>${esc(q.name)} <span style="color:#999;font-weight:400">· ${esc(q.service)}</span></h4><div class="admin-request-meta"><span>☎ ${esc(q.phone)}</span><span>⌖ ${esc(q.place||'Yer belirtilmedi')}</span><span>₺ ${esc(q.budget||'Bütçe belirtilmedi')}</span><span>◷ ${esc(q.timing||'Tarih belirtilmedi')}</span><span>${esc(new Date(q.createdAt).toLocaleString('tr-TR'))}</span></div><p>${esc(q.details)}</p><div class="admin-request-meta"><span>Durum: <b>${esc(q.status)}</b></span></div><div class="admin-request-actions"><button class="primary" onclick="ACDC.updateRequest('${q.id}','İnceleniyor')">İnceleniyor</button><button onclick="ACDC.updateRequest('${q.id}','Teklif verildi')">Teklif verildi</button><button onclick="ACDC.updateRequest('${q.id}','Tamamlandı')">Tamamlandı</button><button onclick="ACDC.updateRequest('${q.id}','Yeni')">Yeni yap</button><button onclick="ACDC.deleteRequest('${q.id}')">Talebi sil</button></div></article>`).join('');
+  status.textContent=`${requestsCache.length} talep listelendi.`;
+ }catch(e){status.textContent=e.message;box.innerHTML=''}
+}
+async function updateRequest(id,status){
+ try{const r=await fetch('/api/admin/requests/'+encodeURIComponent(id),{method:'PATCH',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify({status})});const d=await r.json();if(!r.ok)throw new Error(d.error||'Güncellenemedi');refreshRequests()}catch(e){$('requestAdminStatus').textContent=e.message}
+}
+async function deleteRequest(id){
+ if(!confirm('Bu talep kalıcı olarak silinsin mi?'))return;
+ try{const r=await fetch('/api/admin/requests/'+encodeURIComponent(id),{method:'DELETE',credentials:'same-origin'});const d=await r.json();if(!r.ok)throw new Error(d.error||'Silinemedi');refreshRequests()}catch(e){$('requestAdminStatus').textContent=e.message}
+}
+function exportRequests(){
+ if(!requestsCache.length){$('requestAdminStatus').textContent='Dışa aktarılacak talep yok.';return}
+ const cols=['createdAt','name','phone','service','place','budget','timing','details','status'];
+ const quote=v=>'"'+String(v??'').replace(/"/g,'""')+'"';
+ const csv='\ufeff'+[cols.join(';'),...requestsCache.map(q=>cols.map(k=>quote(q[k])).join(';'))].join('\r\n');
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download='acdc-teklif-talepleri.csv';a.click();URL.revokeObjectURL(a.href)
+}
+function changeCredentials(){$('accountStatus').textContent='Giriş bilgileri sunucuda ACDC_ADMIN_USER ve ACDC_ADMIN_PASS ortam değişkenleriyle değiştirilir. README dosyasındaki yayınlama adımlarına bakın.'}
+load();applySite();renderWorks();loadSharedState();
+$('quoteForm').addEventListener('submit',e=>{e.preventDefault();sendQuote(e.currentTarget)});
+$('workGrid').addEventListener('click',e=>{const im=e.target.closest('[data-work-image]');if(im&&im.dataset.workImage){e.preventDefault();e.stopPropagation();openLightbox(im.dataset.workImage,im.alt);return}const card=e.target.closest('[data-work-id]');if(card){e.preventDefault();openLightbox(card.dataset.workId)}});
+$('workGrid').addEventListener('keydown',e=>{const card=e.target.closest('[data-work-id]');if(card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();openLightbox(card.dataset.workId)}});
+const inputs=[['editLogoFile','logo'],['editHeroFile','hero'],['editFeatureFile','feature'],['editGallery1','gallery1'],['editGallery2','gallery2'],['editGallery3','gallery3']];
+inputs.forEach(([id,key])=>{const el=$(id);if(el)el.addEventListener('change',e=>fileToData(e.target.files[0],d=>{pending[key]=d;const preview={'logo':'logoPreview','hero':'heroPreview','feature':'featurePreview','gallery1':'galleryPreview1','gallery2':'galleryPreview2','gallery3':'galleryPreview3'}[key];if($(preview))$(preview).src=d}))});
+const newWorkImage=$('newWorkImage');if(newWorkImage)newWorkImage.addEventListener('change',async e=>{pendingWorkImages=[];const files=Array.from(e.target.files||[]);if(!files.length)return;let done=0;$('workStatus').textContent=`${files.length} fotoğraf hazırlanıyor…`;for(const file of files){await new Promise(resolve=>fileToData(file,d=>{pendingWorkImages.push(d);done++;resolve()}))}$('workStatus').textContent=`${pendingWorkImages.length} fotoğraf hazır. İşi ekle düğmesine bas.`});
+$('adminModal').addEventListener('click',e=>{if(e.target===$('adminModal'))closeAdmin()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAdmin();closeLightbox()}});
+$('lightbox').addEventListener('click',e=>{if(e.target===$('lightbox')||e.target.id==='lightboxClose')closeLightbox()});
+$('lightboxImage').addEventListener('click',e=>e.stopPropagation());
+if(location.pathname.replace(/\/+$/,'')==='/admin')openLogin();
+const api={openLogin,closeAdmin,login,logout,tab,saveSite,addWork,deleteWork,changeCredentials,savePhotos,clearPhotos,saveStyle,resetStyle,addService,removeService,saveServices,openLightbox,closeLightbox,refreshRequests,updateRequest,deleteRequest,exportRequests};window.ACDC=api;return api;
+})();
+</script>
+
+</body></html>
